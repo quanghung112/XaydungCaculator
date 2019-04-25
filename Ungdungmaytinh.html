@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+       <input type="text" id="sothu1">   <input type="text" id="sothu2"><br/>
+        <button type="button" onclick="phepnhan()">X</button>
+       <button type="button" onclick="phepchia()">/</button>
+       <button type="button" onclick="phepcong()">+</button>
+       <button type="button" onclick="pheptru()">-</button><br/>
+        Ket qua = <p id="ketqua"></p>
+    <script>
+        function phepnhan() {
+            let a = document.getElementById('sothu1').value;
+            let b = document.getElementById('sothu2').value;
+            ST1 = parseFloat(a);
+            ST2 = parseFloat(b);
+            Kq=ST1*ST2;
+            document.getElementById("ketqua").innerHTML = Kq;
+        }
+        function phepchia() {
+            let a = document.getElementById('sothu1').value;
+            let b = document.getElementById('sothu2').value;
+            ST1 = parseFloat(a);
+            ST2 = parseFloat(b);
+            Kq = ST1 / ST2;
+            document.getElementById("ketqua").innerHTML = Kq;
+        }
+        function phepcong() {
+            let a = document.getElementById('sothu1').value;
+            let b = document.getElementById('sothu2').value;
+            ST1 = parseFloat(a);
+            ST2 = parseFloat(b);
+            Kq = ST1 + ST2;
+            document.getElementById("ketqua").innerHTML = Kq;
+        }
+        function pheptru() {
+            let a = document.getElementById('sothu1').value;
+            let b = document.getElementById('sothu2').value;
+            ST1 = parseFloat(a);
+            ST2 = parseFloat(b);
+            Kq = ST1 - ST2;
+                document.getElementById("ketqua").innerHTML = Kq;
+
+        }
+    </script>
+
+</body>
+</html>
